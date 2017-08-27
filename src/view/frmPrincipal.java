@@ -5,12 +5,15 @@
  */
 package view;
 import model.*;
+import controle.*;
+
 
 /**
  *
  * @author barba
  */
 public class frmPrincipal extends javax.swing.JFrame {
+
 
     /**
      * Creates new form frmPrincipal
@@ -158,7 +161,7 @@ public class frmPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn00ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn00ActionPerformed
-        this.Jogar(0, 0);
+        Controle.Jogar(0, 0);
     }//GEN-LAST:event_btn00ActionPerformed
 
     private void btn01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn01ActionPerformed

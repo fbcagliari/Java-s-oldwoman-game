@@ -6,6 +6,7 @@
 package controle;
 
 import model.*;
+import view.*;
 
 /**
  *
@@ -33,7 +34,10 @@ public class Controle {
         }
         return true;
     }
-    public boolean Vencedor(int p_x, int p_y){
+    public boolean Vencedor(Tabuleiro.jogador atual){
+        for (int x=0; x<2; x++){
+            if ()
+        }
         return true;
         }
 //https://github.com/mflash/jogovelha/blob/master/src/pucrs/alpro2/JogoVelha.java
