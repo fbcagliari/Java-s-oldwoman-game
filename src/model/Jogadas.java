@@ -4,12 +4,13 @@
  * and open the template in the editor.
  */
 package model;
+import Controle.*;
 
 public class Jogadas {
     public static enum estadobtn{
         X,O,N
     }
-    public enum Vencedor{
+    public enum vencedor{
         X, O, nenhum, empate
     }
     

@@ -6,6 +6,7 @@
 package view;
 import model.*;
 import controle.*;
+import javax.swing.JButton;
 
 
 /**
@@ -161,7 +162,7 @@ public class frmPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn00ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn00ActionPerformed
-        Controle.Jogar(0, 0);
+        btn00.setText();
     }//GEN-LAST:event_btn00ActionPerformed
 
     private void btn01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn01ActionPerformed
@@ -189,13 +190,16 @@ public class frmPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btn20ActionPerformed
 
     private void btn21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn21ActionPerformed
-        this.Jogar(2, 1);
+        this.Jogar(2, 1, btn21);
     }//GEN-LAST:event_btn21ActionPerformed
 
     private void btn22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn22ActionPerformed
-        this.Jogar(2, 2);
+        this.Jogar(2, 2, btn22);
     }//GEN-LAST:event_btn22ActionPerformed
-
+public void Jogar(int x, int y, JButton btn){
+    btn.setText("X");
+}
+    
     /**
      * @param args the command line arguments
      */

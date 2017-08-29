@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package model;
+import view.*;
 
 /**
  *
@@ -33,5 +34,18 @@ public class Tabuleiro {
     }
     public jogador getPosicao(int p_x, int p_y){
         return tabuleiro[p_x][p_y];
+    }
+    public jogador Vencedor(){
+        for (int x=0;x <=2; x++){
+            if (tabuleiro[x][0] == tabuleiro[x][1] && tabuleiro[x][2] == tabuleiro[x][1] && tabuleiro[x][2] != jogador.N){
+                return tabuleiro[x][0];
+            }
+             if (tabuleiro[0][x] == tabuleiro[x][1] && tabuleiro[x][2] == tabuleiro[x][1] && tabuleiro[x][2] != jogador.N){
+                return tabuleiro[x][0];
+            }
+        }
+        
+        
+        return jogador.N;
     }
 }
