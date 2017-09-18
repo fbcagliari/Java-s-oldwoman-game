@@ -162,31 +162,31 @@ public class frmPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn00ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn00ActionPerformed
-        btn00.setText();
+        this.Jogar(0, 0, btn00);
     }//GEN-LAST:event_btn00ActionPerformed
 
     private void btn01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn01ActionPerformed
-        this.Jogar(0, 1);
+        this.Jogar(0, 1, btn01);
     }//GEN-LAST:event_btn01ActionPerformed
 
     private void btn02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn02ActionPerformed
-        this.Jogar(0, 2);
+        this.Jogar(0, 2, btn02);
     }//GEN-LAST:event_btn02ActionPerformed
 
     private void btn10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn10ActionPerformed
-        this.Jogar(1, 0);
+        this.Jogar(1, 0, btn10);
     }//GEN-LAST:event_btn10ActionPerformed
 
     private void btn11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn11ActionPerformed
-        this.Jogar(1, 1);
+        this.Jogar(1, 1, btn11);
     }//GEN-LAST:event_btn11ActionPerformed
 
     private void btn12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn12ActionPerformed
-        this.Jogar(1, 2);
+        this.Jogar(1, 2, btn12);
     }//GEN-LAST:event_btn12ActionPerformed
 
     private void btn20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn20ActionPerformed
-        this.Jogar(2, 0);
+        this.Jogar(2, 0, btn20);
     }//GEN-LAST:event_btn20ActionPerformed
 
     private void btn21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn21ActionPerformed
@@ -196,8 +196,9 @@ public class frmPrincipal extends javax.swing.JFrame {
     private void btn22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn22ActionPerformed
         this.Jogar(2, 2, btn22);
     }//GEN-LAST:event_btn22ActionPerformed
-public void Jogar(int x, int y, JButton btn){
-    btn.setText("X");
+public void Jogar(int x, int y, JButton btn){            
+        btn.setText("X");
+        
 }
     
     /**

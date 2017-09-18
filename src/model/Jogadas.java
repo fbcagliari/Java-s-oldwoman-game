@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package model;
-import Controle.*;
+import controle.*;
 
 public class Jogadas {
     public static enum estadobtn{
